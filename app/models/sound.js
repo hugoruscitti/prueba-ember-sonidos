@@ -3,7 +3,8 @@ import DS from 'ember-data';
 let sound = DS.Model.extend({
   name: DS.attr('string'),
   path: DS.attr('string'),
-  color: DS.attr('string')
+  color: DS.attr('string'),
+  date: DS.attr('date')
 });
 
 sound.reopenClass({

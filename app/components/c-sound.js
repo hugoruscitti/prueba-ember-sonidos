@@ -8,7 +8,7 @@ export default Ember.Component.extend({
   audioObject: null,
   actions: {
     reproducir: function(model) {
-      var audio = this.get('audioObject')
+      var audio = this.get('audioObject');
 
       if (!audio) {
         audio = new Audio(model.get('path'));
